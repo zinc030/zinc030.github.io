@@ -1,102 +1,190 @@
 <!DOCTYPE html>
-<html>
-<p><b> 목록 </b></p>
-<nav>
-    <a href="/about_me/">About Me</a><br>
-    <a href="/schedule_2022fall/">시간표</a><br>
-    <a href="/wikipedia_copywork/">위키백과</a><br>
-</nav>
-    
-<head>
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-</style>
-</head>
-<body>
 
-<h1>2022 가을학기 시간표 (오아연)</h1>
-<table>
-  <colgroup span="5"></colgroup>
-  <tr>
-  	<td></td>
-    <th>월</th>
-    <th>화</th>
-    <th>수</th>
-    <th>목</th>
-    <th>금</th>
-  </tr>
-  <tr>
-    <td>9AM</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>응용자료구조</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>10AM</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>응용자료구조</td>
-    <td>-</td>
-  </tr>
-    <tr>
-    <td>11AM</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>응용자료구조</td>
-    <td>-</td>
-  </tr>
-    <tr>
-    <td>12PM</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>정보SW공학</td>
-  </tr>
-    <tr>
-    <td>1PM</td>
-    <td>-</td>
-    <td>웹프로그래밍</td>
-    <td>정보기술과보안</td>
-    <td>-</td>
-    <td>정보SW공학</td>
-  </tr>
-    <tr>
-    <td>2PM</td>
-    <td>-</td>
-    <td>웹프로그래밍</td>
-    <td>정보기술과보안</td>
-    <td>-</td>
-    <td>정보SW공학</td>
-  </tr>
-    <tr>
-    <td>3PM</td>
-    <td>-</td>
-    <td>웹프로그래밍</td>
-    <td>정보기술과보안</td>
-    <td>데이터베이스개론</td>
-    <td>-</td>
-  </tr>
-    <tr>
-    <td>4PM</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>데이터베이스개론</td>
-    <td>-</td>
-  </tr>
-    <tr>
-    <td>5PM</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>데이터베이스개론</td>
-    <td>-</td>
-  </tr>
-</table>
+<html>
+    <head>
+        <style>
+            .item1 {grid-area: header;}
+            .item2 {grid-area: menu;}
+            .item3 {grid-area: main;}
+            .item4 {grid-area: right;}
+            .item5 {grid-area: footer;}
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header header'
+                    'menu main main main main main right'
+                    'menu footer footer footer footer footer footer';
+                    gap: 10px;
+                    background-color: #25316d;
+                    padding: 10px;
+            }
+
+            .grid-container > div {
+                text-align: center;
+                padding: 20px 0;
+                font-size: 16px;
+            }
+
+            .item1{
+                background-color: #5F6F94;
+            }
+            .item2{
+                background-color: #97D2Ec;
+            }
+            .item3{
+                background-color: #97D2Ec;
+            }
+            .item4{
+                background-color: #97D2Ec;
+            }
+            .item5{
+                background-color: #FEF5ac;
+            }
+
+            table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid;
+            }
+            th, td {
+            border: 1px solid #444444;
+            padding: 5px;
+            }
+
+        </style>
+    </head>
+
+<body>
+    <h1></h1>
+    <p></p>
+    <div class="grid-container">
+        <div class="item1">
+            <h1> A Yeon</h1>
+
+        </div>
+        <div class="item2">
+            Navigation
+            <ul>
+                <li><a href="/about_me/">About Me</a><br></li>
+                <li><a href="/schedule_2022fall/">시간표</a><br></li>
+                <li><a href="/wikipedia_copywork/">위키백과</a><br></li>
+            </ul>
+        </div>
+        <div class="item3">
+            2022 Fall Schedule 
+
+            <table id = "schedule">
+                <colgroup span="5"></colgroup>
+                <tr>
+                    <td></td>
+                  <th>월</th>
+                  <th>화</th>
+                  <th>수</th>
+                  <th>목</th>
+                  <th>금</th>
+                </tr>
+                <tr>
+                  <td>9AM</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>응용자료구조</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10AM</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>응용자료구조</td>
+                  <td></td>
+                </tr>
+                  <tr>
+                  <td>11AM</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>응용자료구조</td>
+                  <td></td>
+                </tr>
+                  <tr>
+                  <td>12PM</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>정보SW공학</td>
+                </tr>
+                  <tr>
+                  <td>1PM</td>
+                  <td></td>
+                  <td>웹프로그래밍</td>
+                  <td>정보기술과보안</td>
+                  <td></td>
+                  <td>정보SW공학</td>
+                </tr>
+                  <tr>
+                  <td>2PM</td>
+                  <td></td>
+                  <td>웹프로그래밍</td>
+                  <td>정보기술과보안</td>
+                  <td></td>
+                  <td>정보SW공학</td>
+                </tr>
+                  <tr>
+                  <td>3PM</td>
+                  <td></td>
+                  <td>웹프로그래밍</td>
+                  <td>정보기술과보안</td>
+                  <td>데이터베이스개론</td>
+                  <td></td>
+                </tr>
+                  <tr>
+                  <td>4PM</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>데이터베이스개론</td>
+                  <td></td>
+                </tr>
+                  <tr>
+                  <td>5PM</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>데이터베이스개론</td>
+                  <td></td>
+                </tr>
+              </table>
+
+
+
+        </div>
+        <div class="item4">
+            Aside
+
+
+
+
+
+
+
+        </div>
+        <div class="item5">
+            Footer
+
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+
+
+</html>
+
