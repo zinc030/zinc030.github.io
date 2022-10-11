@@ -18,15 +18,22 @@
         top: 20px;
         z-index: 9999 !important;
       }
+      .gradient-custom1 {
+        /* fallback for old browsers */
+        background: #f6d365;
+
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5));
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5))
+      }
+      
     </style>
-
-
   </head>
-
-
-<body>
-  <header class="col-12">      
-    <h1><a href="/index.html">A Yeon</a></h1>
+<body class="gradient-custom1">
+  <header class="col-12 blockquote text-center">      
+    <h1 class="display-1"><a href="/index.html">A Yeon</a></h1>
   </header>
   <section class="container">
     <div class="row">
@@ -40,7 +47,7 @@
       </ul>
       </nav>
       <main class="col-sm-9">
-        <table class="table table-bordered table-condensed table-hover caption-top" id = "schedule">
+        <table class="table table-primary table-bordered table-condensed table-hover caption-top" id = "schedule">
           <caption>2022 가을 시간표</caption>
           <thead>
             <tr>
