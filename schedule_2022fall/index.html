@@ -16,7 +16,7 @@
     <style>
       .affix {
         top: 20px;
-        z-index: 9999 !important;
+        z-index: 9999;
       }
       .gradient-custom1 {
         /* fallback for old browsers */
@@ -28,6 +28,10 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background: linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5))
       }
+      td.colorfy {
+        background: rgb(223, 255, 150) !important;
+        color: rgb(0, 0, 0);
+  }
       
     </style>
   </head>
@@ -47,9 +51,9 @@
       </ul>
       </nav>
       <main class="col-sm-9">
-        <table class="table table-primary table-bordered table-condensed table-hover caption-top" id = "schedule">
+        <table class="table border-primary table-primary table-bordered table-condensed table-hover caption-top" id = "schedule">
           <caption>2022 가을 시간표</caption>
-          <thead>
+          <thead class="table">
             <tr>
               <th scope="col" style="width:10%"></th>
               <th scope="col" style="width:18%">월</th>
@@ -59,18 +63,18 @@
               <th scope="col" style="width:18%">금</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table table-bordered">
             <tr>
               <th scope="row">9AM</td>
               <td></td>
               <td></td>
               <td></td>
-              <td rowspan="3">응용자료구조</td>
+              <td rowspan="3" class="colofy">응용자료구조</td>
               <td></td>
             </tr>
             <tr>
               <th scope="row">10AM</td>
-              <td></td>
+              <td ></td>
               <td></td>
               <td></td>
               <td></td>
@@ -88,13 +92,13 @@
               <td></td>
               <td></td>
               <td></td>
-              <td rowspan="3">정보SW공학</td>
+              <td rowspan="3" class="colofy">정보SW공학</td>
             </tr>
             <tr>
               <th scope="row">1PM</td>
               <td></td>
-              <td rowspan="3">웹프로그래밍</td>
-              <td rowspan="3">정보기술과<br>보안</td>
+              <td rowspan="3" class="colofy">웹프로그래밍</td>
+              <td rowspan="3" class="colofy">정보기술과<br>보안</td>
               <td></td>
             </tr>
             <tr>
@@ -105,7 +109,7 @@
             <tr>
               <th scope="row">3PM</td>
               <td></td>
-              <td rowspan="3">데이터베이스<br>개론</td>
+              <td rowspan="3" class="colofy">데이터베이스<br>개론</td>
               <td></td>
             </tr>
             <tr>
